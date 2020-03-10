@@ -39,7 +39,7 @@ const Pie = () => {
       orient: "vertical",
       top: 20,
       right: 5,
-      data: typeList
+      data: typeList.map(item => item === "" ? "Unknow Type" : item)
     },
     series: [
       {

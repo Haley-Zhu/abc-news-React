@@ -16,6 +16,7 @@ const News = () => {
       .then(data => {
         const dataSource = data.articles.map(item => {
           return {
+            key: item.url,
             id: item.url,
             url: item.url,
             title: item.title,
